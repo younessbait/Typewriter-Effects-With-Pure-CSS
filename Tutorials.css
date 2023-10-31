@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma;
+    background-color: rgb(51, 51, 51);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.726);
+    margin: 20px auto;
+    font-size: 30px;
+    width: 590px;
+    font-weight: bolder;
+    border-right: 2px solid rgba(255, 255, 255, 0.726);
+    animation: controle-width 3s 2s steps(28) both, controle-border 0.5s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes controle-width {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 590px;
+    }
+}
+
+@keyframes controle-border {
+    from {
+        border-right: 2px solid rgba(255, 255, 255, 0.726);
+    }
+
+    to {
+        border-right: transparent;
+    }
+}
